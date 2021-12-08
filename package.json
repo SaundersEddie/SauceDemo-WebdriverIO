@@ -1,0 +1,20 @@
+{
+  "name": "SauceDemo-WebdriverIO",
+  "version": "1.0.0",
+  "description": "SauceDemo dite with webdriver IO testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaundersEddie/SauceDemo-WebdriverIO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaundersEddie/SauceDemo-WebdriverIO/issues"
+  },
+  "homepage": "https://github.com/SaundersEddie/SauceDemo-WebdriverIO#readme"
+}
