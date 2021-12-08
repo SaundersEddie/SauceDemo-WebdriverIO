@@ -2,7 +2,7 @@ const Page = require('./page');
 
 class LoginPage extends Page {
     
-    get userName() {
+    get username() {
         return $('#user-name');
     } 
 
@@ -10,12 +10,20 @@ class LoginPage extends Page {
         return $('#password');
     }
 
+
     get loginButton() {
         return $('#login-button');
     }
 
-    open() {
-        return super.openURL('https://www.saucedemo.com');
+    async open() {
+        return await super.openURL('https://www.saucedemo.com');
+    }
+
+    async userLogin(ourUsername, ourPassword) {
+        await this.username.setValue(ourUsername);
+        await this.password.setValue(ourPassword);
+        await this.loginButton.click();
     }
 }
+
 module.exports = new LoginPage();

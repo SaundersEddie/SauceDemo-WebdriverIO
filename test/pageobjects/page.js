@@ -1,6 +1,6 @@
 module.exports = class Page {
 
-    openURL(pageURL) {
-        return browser.url(pageURL);
+    async openURL(pageURL) {
+        return await browser.url(pageURL);
     }
 }
