@@ -1,20 +1,29 @@
 {
-  "name": "SauceDemo-WebdriverIO",
-  "version": "1.0.0",
-  "description": "SauceDemo dite with webdriver IO testing",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SaundersEddie/SauceDemo-WebdriverIO.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SaundersEddie/SauceDemo-WebdriverIO/issues"
-  },
-  "homepage": "https://github.com/SaundersEddie/SauceDemo-WebdriverIO#readme"
+    "name": "SauceDemo-WebdriverIO",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "wdio": "wdio run wdio.conf.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SaundersEddie/SauceDemo-WebdriverIO.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SaundersEddie/SauceDemo-WebdriverIO/issues"
+    },
+    "homepage": "https://github.com/SaundersEddie/SauceDemo-WebdriverIO#readme",
+    "devDependencies": {
+        "@wdio/cli": "^7.16.10",
+        "@wdio/local-runner": "^7.16.10",
+        "@wdio/mocha-framework": "^7.16.6",
+        "@wdio/spec-reporter": "^7.16.9",
+        "chromedriver": "^96.0.0",
+        "wdio-chromedriver-service": "^7.2.2"
+    }
 }
