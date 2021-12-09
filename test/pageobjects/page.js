@@ -12,10 +12,18 @@ module.exports = class Page {
         return await browser.url(pageURL);
     }
 
+    async openMenu() {
+        await this.menu.waitForClickable({timeout: 3000});
+        await this.menu.click();
+    }
+
     async logout() {
         await this.menu.click();
         await this.menuLogout.waitForClickable({timeout: 3000});
         await this.menuLogout.click();
         return
+    }
+    async closeBrowser() {
+        return browser.closeWindow();
     }
 }

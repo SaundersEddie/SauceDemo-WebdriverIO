@@ -16,9 +16,13 @@ class LoginPage extends Page {
     }
 
     async open() {
+        await browser.maximizeWindow();
         return await super.openURL('https://www.saucedemo.com');
     }
-
+    async testLogout() {
+        return await super.logout();
+    }
+    
     async userLogin(ourUsername, ourPassword) {
         await this.username.setValue(ourUsername);
         await this.password.setValue(ourPassword);
