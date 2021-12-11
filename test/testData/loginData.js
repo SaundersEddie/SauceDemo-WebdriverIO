@@ -1,14 +1,14 @@
 module.exports = {
     goodPassword:   "secret_sauce",
     badPassword:    "not_secret_sauce",
+    lockedUsername: "locked_out_user",
     goodUsername: [
         "standard_user",
-        "locked_out_user",
         "problem_user",
         "performance_glitch_user"
     ],
     badUsername: [
-        "BadUSer1",
+        "BadUser1",
         "BadUser2",
         "BadUser3"
     ]
